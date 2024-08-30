@@ -35,10 +35,10 @@ mongoose.connect(process.env.MONGODB_STRING, {
 mongoose.connection.once('open', () => console.log('Connected to MongoDB'));
 
 // // Backend Routes with /b2 prefix
-app.use("/b7/users", userRoutes);
-app.use("/b7/products", productRoutes);
-app.use("/b7/cart", cartRoutes);
-app.use("/b7/orders", orderRoutes);
+app.use("/users", userRoutes);
+app.use("/products", productRoutes);
+app.use("/cart", cartRoutes);
+app.use("/orders", orderRoutes);
 
 // Server Gateway Response
 if (require.main === module) {
