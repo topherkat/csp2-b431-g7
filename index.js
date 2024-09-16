@@ -24,7 +24,7 @@ const corsOptions = {
     optionsSuccessStatus: 200
 };
 
-app.use(cors(corsOptions));
+app.use(cors());
 
 // Database Connection
 mongoose.connect(process.env.MONGODB_STRING, {
